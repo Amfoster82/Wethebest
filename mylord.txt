@@ -1,0 +1,11 @@
+As you can probably tell from our examples, the output of git status is very useful to show us which files have tracked or untracked changes, and which files were added, modified, deleted or renamed. It is important that the output of the git status command stays relevant to our project. 
+
+Some project files may not need to be tracked. Some files may be  automatically generated, for example. The .gitignore file can be used to tell git which files to skip in the current repo. To do this, create a .gitignore file containing the name of this file(s) you don't want tracked. The dot prefix in a Unix-like file system indicates that the file or directory is hidden and won't show up when you do the normal directory listing.
+
+That's why we have to use ls -la (read this as "el a", not number 1) to see all files. Try it: compare the outputs of
+   ls
+   ls -la
+
+Add a .gitignore file to your repo. use a text editor to add the name of a file in your repo that you do not want tracked.
+When you add a .gitignore file to our repo, please commit it. You can skip the stage using the -am shortcut. This file needs to be tracked just like the rest of the files in the repo. 
+
